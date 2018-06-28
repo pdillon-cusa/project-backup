@@ -63,11 +63,14 @@ hr {
 
 // ------------------------------------
 .custom-container {
-    width: 45rem;
+    width: 600px;
     padding: 0 2rem;
     max-width: 100%;
     margin: 7rem auto;
     overflow: auto;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
     h2 {
         font-weight: 400;
         color: $gray-med;
@@ -85,7 +88,18 @@ hr {
 }
 .sign-in {
     margin-top: 2rem;
-    width: 30rem;
+    width: 450px;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    .button-ct {
+        text-align: right;
+    }
+    .forgot-link {
+        display: inline-block;
+        padding: 12px 18px;
+        margin: 10px 0;
+    }
 }
 .centered {
     width: 60rem;
