@@ -1,0 +1,118 @@
+/* OVERRIDE IBM CLASSES  */
+.wpToolbarLogo {
+    display: none !important;
+}
+
+.infoModeToggle {
+    display: none !important;
+}
+
+.wpthemeBannerInner {
+	background: -webkit-linear-gradient(top, #565656 0%,#f3f3f3 100%) !important;
+}
+
+.wpthemeLayoutContainers {
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wptheme1Col .wpthemeCol {
+	width: 100%;
+	margin: 0;
+	min-height: 0;
+}
+
+.wpthemeInner, .wpthemeSecondaryNav {
+	width: 100%;
+	margin: 0;
+	min-height: 0;
+}
+
+.wpthemeOverflowAuto {
+	overflow: hidden  !important;
+}
+
+/* NEW WEB CUSTOM CSS */
+
+
+/* CSS FOR SUPPORT FAQ MODAL DIALOG  */
+.sfm-introtext, .sfm-confirm-header {
+	background-color: #EE1B22;
+	color: white;
+}
+
+.sfm-introtext {
+	font-size: 1.1em;
+}
+
+.sfm-bg-grey {
+	padding: 5px 3px;
+	border-bottom: 1px solid #8f9091;
+}
+
+.sfm-bg-grey:last-of-type {		
+	border-top: 1px solid #8f9091;
+	border-bottom: 0px;
+}
+
+.sfm-bg-grey,  .sfm-bg-grey a {
+	background-color: #e6e6e6;
+	font-size: 0.9em;		
+}
+
+.sfm-bg-grey a {
+	cursor: pointer;
+}
+
+.sfm-results {
+	padding: 3px 0px;
+	list-style-type: none;
+	margin-bottom: 0px;
+}
+
+.sfm-results li {
+	padding: 5px 20px;
+}
+
+.sfm-link-detail {
+	cursor: pointer;
+}
+
+.sfm-odd-row {
+	background-color: #e6e6e6;
+}
+
+.sfm-paginator a {
+	padding: 3px;
+}
+
+.sfm-paginator a.active {
+	font-size: 1.2em;
+	color: red;		
+}
+
+.sfm-confirm-header {
+	padding: 5px 5px 5px 15px;	
+}
+
+.sfm-confirm-body a {
+	font-size: 0.8em;
+}
+
+.sfm-small {
+	font-size: 0.8em;
+}
+
+@media (max-width: 991px) {
+	.sfm-menu-item {
+		text-align: center;	
+	}
+}
+@media (min-width: 992px) {
+	.sfm-menu-item:last-of-type {
+		text-align: right;	
+	}
+}

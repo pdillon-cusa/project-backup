@@ -1,0 +1,154 @@
+// ------------------------------------
+// Work Sections - General 
+
+.section-head {
+    border-bottom: 1px solid $gray-dark;
+    position: relative;
+    margin-bottom: 1rem;
+    height: 4rem;
+    &__title {
+        width: 50%;
+        float: left;
+    }
+    &__actions {
+        padding-top: 1rem;
+        margin-left: 50%;
+        text-align: right;
+    }
+}
+
+
+.search-filters, .custom-modal {
+    border-bottom: 1px solid $gray-dark;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    &__title {
+        margin-bottom: .5rem;
+        text-align: center;
+        font-size: 19px;
+        border-bottom: 1px solid $primary;
+        padding-bottom: .5rem;
+        color: $primary;
+    }
+    
+    .cols {
+        width: 18rem;
+        float: left;
+        padding: 0 .5rem;
+    }
+    &__label {
+        font-size: 12px;
+        font-weight: 600;
+        display: block;
+        @include ellipsis;
+        label { 
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        span.date-label {
+            color: $warning-hover;
+            margin-left: 1rem;
+        }
+        i {
+            font-size: 20px;
+            float: right;
+            margin-left: 3px;
+        }
+        .small {
+            margin-top: -5px;
+            color: $warning;
+            display: block;
+            font-size: 90% !important;
+        }
+    }
+    &__sub-item {
+        font-size: 11px;
+        width: 50%;
+        float: left;
+        height: 44px;
+    }
+    &__input {
+        width: 100%;
+        display: block;
+        input { 
+            padding: 3px 6px;
+            width: 100%;
+            margin-bottom: .4rem;
+        }
+        input[type='date'] { line-height: 1; }
+        
+    }
+}
+.button-section, .button-section-foot  {
+    padding-top: .5rem;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.button-section-foot {
+    margin-top: 0;
+}
+
+// Tooltip
+.maxCoverageTooltip {
+    display: none;
+    padding: 0.95rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) -2px 2px 12px;
+    background-color: $section-3B;
+    border: 2px solid $section-3;
+    color: $section-3C;
+    width: 15rem;
+    animation: move .4s ease 1;
+    transform: translate(-255px, -81px);
+    position: absolute;
+    z-index: 5;
+    p {
+      font: 13px Arial;
+      line-height: 18px;
+      margin: 0;
+    }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent $section-3;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: -12px;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    border-color: transparent $section-3B;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+}
+.close-tooltip {
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+    cursor: pointer;
+    float: right;
+    margin: -5px -3px 0 0;
+    color: $section-3A;
+    &:hover {
+        color: $section-3C;
+    }
+}
+@keyframes move {
+    0% { transform: translate(-265px, -81px); }
+    100% { transform: translate(-255px, -81px) }
+}

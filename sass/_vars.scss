@@ -1,0 +1,58 @@
+
+// Basic Theme
+$wht: white;
+$blk: black;
+$body-bg: #efefef;
+$font-family: 'PT Sans', sans-serif;;
+
+$primary: #EE1B22;
+$primary-hover: mix(black, $primary, 15%);
+$primary-x-lt: mix(white, #EE1B22, 85%);
+
+$link: #07C;
+$link-visited: mix(black, $link, 15%);
+$link-hover: $primary;
+$link-active: mix(black, $primary, 15%);
+
+$success: #5cb85c;
+$success-hover: mix(black, $success, 15%);
+
+$warning: #E69500;
+$warning-hover: mix(black, $warning, 15%);
+
+$info: #17a2b8;
+$info-hover: mix(black, $info, 15%);
+
+$button-standard: #1779ba;
+$button-standard-hover: mix(black, $button-standard, 15%);
+
+$accent: #1779ba;
+
+$gray-x-dark: #222;
+$gray-dark: #444;
+$gray-med: #555;
+$gray-lt: #ccc;
+$gray-x-lt: #ddd;
+
+// Blocks
+$section-1A: #20A8D8;
+$section-1: mix(black, $section-1A, 20%);
+
+$section-2A: #63C2DE;
+$section-2: mix(black, $section-2A, 20%);
+
+$section-3A: #02B2A3;
+$section-3: mix(black, $section-3A, 20%);
+$section-3B: mix(white, $section-3A, 60%);
+$section-3C: mix(black, $section-3A, 50%);
+
+$section-4A: #F86C6B;
+$section-4: mix(black, $section-4A, 20%);
+
+$new-row: mix(white, orange, 10%);
+
+@mixin ellipsis {
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
