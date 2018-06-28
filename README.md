@@ -1,6 +1,6 @@
 Run Browser Sync:
 ------------
-<code>browser-sync start --server --files "*.html, css/*.css"<code>
+` browser-sync start --server --files "*.html, css/*.css" `
 
 Project Backup
 ------------
