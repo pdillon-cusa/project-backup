@@ -33,8 +33,25 @@ header {
     }
     nav {
         color: $gray-dark;
-        padding-top: 1rem;
         float: right;
+        margin-top: .5rem;
+        text-transform: uppercase;
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: .75rem;
+            li {
+                display: inline-block;
+                margin-left: -2px;
+                padding: .5rem;
+            }
+            i {
+                font-size: 1rem;
+                padding-right: .4rem;
+                position: relative;
+                top: 2px;
+            }
+        }
     }
 }
 footer {
@@ -84,6 +101,9 @@ hr {
     }
     h3 {
         margin-bottom: 1.5rem;        
+    }
+    img {
+        width: 100%;
     }
 }
 .sign-in {
