@@ -19,7 +19,7 @@
 
     <header>
         <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
-        <nav>
+        <nav id="dtop-menu">
             <ul>
                 <li><a href="#"><i class="icon-user-circle-o"></i>Welcome, Peter</a></li>
                 <li><a href="#">(Not You?)</a></li>
@@ -27,26 +27,120 @@
                 <li><a href="#">Change Password</a></li>
             </ul>
         </nav>
+        <nav id="mobile-menu">
+            <ul>
+                <li><a href="#">Welcome, Peter</a></li>
+                <li><a href="#">(Not You?)</a></li>
+                <li><a href="#">Sign Out</a></li>
+                <li><a href="#">Change Password</a></li>
+            </ul>
+        </nav>
+            
+        <div class="mobile-menu-section">
+            <input type="checkbox" id="btnControl" />
+            <label class="btn" for="btnControl" id="toggle">
+                <div class="hamburger hamburger-container">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </label>  
+            </div>
     </header>
     
-    <div class="container custom-container">
+    <div class="container account-home">
+       
         <h2>My Enrolled Printers</h2>
         
-        <div class="list-items">
+        <div class="list-item">
             <div class="row">
-                <div class="col-xs-4">
-                    <img src="img/300x300_G3200_1.png">
+                <div class="col-sm-3">
+                    <div class="img-ct">
+                        <img src="img/printer.jpg">
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                    hello
+                <div class="col-sm-6">
+                    <h3>PIXMA G3200</h3>
+                    <h6>Serial Number 4785634573</h6>
                 </div>
-                <div class="col-xs-4">
-                    test
+                <div class="col-sm-3 rt-col-align">
+                    <div class="status status__active">Active</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <ul class="product-actions">
+                        <li><a href="#">Order history</a></li>
+                        <li><a href="#">Manage Billing</a></li>
+                        <li><a href="#">Manage Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 rt-col-align">
+                    <button class="button alert">Cancel Enrollment</button>
                 </div>
             </div>
         </div>
 
+        <div class="list-item">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="img-ct">
+                        <img src="img/printer.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>PIXMA G3200</h3>
+                    <h6>Serial Number 4785634573</h6>
+                </div>
+                <div class="col-sm-3 rt-col-align">
+                    <div class="status status__ready">Ready To Activate</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                     <ul class="product-actions">
+                        <li><a href="#">Order history</a></li>
+                        <li><a href="#">Manage Billing</a></li>
+                        <li><a href="#">Manage Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 rt-col-align">
+                    <a href="#" class="instructions">Activation Instructions</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="list-item">
+            <div class="row">
+                    <div class="col-sm-3">
+                        <div class="img-ct">
+                            <img src="img/printer.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>PIXMA G3200</h3>
+                        <h6>Serial Number 4785634573</h6>
+                    </div>
+                    <div class="col-sm-3 rt-col-align">
+                        <div class="status status__cancelled">Cancelled</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                       <ul class="product-actions">
+                            <li><a href="#">Order history</a></li>
+                            <li><a href="#">Manage Billing</a></li>
+                            <li><a href="#">Manage Shipping</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 rt-col-align"></div>
+                </div>
+            </div>
+        </div>
 
     </div>
     
@@ -55,6 +149,9 @@
         &copy; Canon 2018
     </div>
 </footer>
+
+<script src="js/vendor/jquery-3.3.1.js"></script>
+<script src="js/ars-global.js"></script>
 
 </body>
 </html>

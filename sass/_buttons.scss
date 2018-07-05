@@ -46,11 +46,3 @@
     background-color: $success-hover;
     text-shadow: 1px 1px 0 $success-hover;
 }
-//--------------
-.button.warning {
-    background-color: $warning;
-}
-.button.warning:hover, .button.warning:focus {
-    background-color: $warning-hover;
-    text-shadow: 1px 1px 0 $warning-hover;
-}

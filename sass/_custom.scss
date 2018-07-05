@@ -5,12 +5,7 @@ body {
   font-family: $font-family;
   color: $gray-med;
 }
-.pad-hrz-sm {
-    padding: 0 .5rem;
-}
-.pad-hrz-med {
-    padding: 0 1.5rem;
-}
+
 header {
     background: $wht;
     position: fixed;
@@ -31,11 +26,14 @@ header {
             left: -99999px;
         }
     }
-    nav {
+    #dtop-menu  {
         color: $gray-dark;
         float: right;
         margin-top: .5rem;
         text-transform: uppercase;
+        @media (max-width: 766px) {
+            display: none;
+        }
         ul {
             margin: 0;
             padding: 0;
@@ -51,6 +49,26 @@ header {
                 position: relative;
                 top: 2px;
             }
+        }
+    }
+}
+
+.product-actions {
+    margin: 0;
+    padding: 0;
+    font-size: .85rem;
+    color: $gray-dark;
+    text-transform: uppercase;
+    li {
+        display: inline-block;
+        margin-left: -2px;
+        padding: .5rem;
+        padding-left: 0;
+        @media (max-width: 766px) {
+            display: block;
+        }
+        a {
+            text-decoration: none;
         }
     }
 }
@@ -134,50 +152,4 @@ hr {
         padding: 2rem;
         border: 1px solid #ccc;
     }
-}
-section {
-  padding: 2rem;
-  box-shadow: 0 8px 20px #ababab;
-  width: calc(50% - 2rem);
-  height: 10rem;
-  margin: 1rem;
-  float: left;
-  text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 900;
-  transition: transform .2s ease;
-  &:hover {
-         transform:  translateY(-3px);
-  }
-  & .sect-icon {
-      padding-top: .5rem;
-      font-size: 3rem;
-      float: left;
-      height: 3rem;
-      width: 3rem;
-  }
-  & .sect-title {
-    margin-left: 4rem;
-  }
-  &.sect-1 {
-      background-color: $section-1A;
-      border: 3px solid $section-1;
-      color: $wht;
-  }
-  &.sect-2 {
-    background-color: $section-2A;
-    border: 3px solid $section-2;
-    color: $wht;
-  }
-  &.sect-3 {
-    background-color: $section-3A;
-    border: 3px solid $section-3;
-    color: $wht;
-  }
-  &.sect-4 {
-    background-color: $section-4A;
-    border: 3px solid $section-4;
-    color: $wht;
-  }
 }
