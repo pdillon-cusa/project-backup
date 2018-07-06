@@ -1,0 +1,123 @@
+
+$td-pad: .65rem;
+$td-font: 11px; 
+
+.order-history {
+    margin: 7rem auto;
+
+    .printer-single {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .primary {
+        color: $primary;
+        padding: 1rem 0;
+    }
+
+    table {
+        width: 100%;
+
+        thead {
+            tr {
+                background-color: #ccc;
+                td {
+                    text-transform: uppercase;
+                    padding: $td-pad;
+                    font-weight: bold;
+                    font-size: $td-font;
+                }
+            }
+        }
+        tr {
+            td {
+                padding: $td-pad;
+                font-weight: normal;
+                font-size: $td-font;
+            }
+        }
+    } // end table
+}
+
+
+
+/*!
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
+// by David Bushell
+*/
+.rtable {
+    /*!
+    // IE needs inline-block to position scrolling shadows otherwise use:
+    // display: block;
+    // max-width: min-content;
+    */
+     display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    // optional - looks better for small cell values
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: none !important; // temp
+  }
+  .rtable,
+  .rtable--flip tbody {
+    // optional - enable iOS momentum scrolling
+    -webkit-overflow-scrolling: touch;
+    background-repeat: no-repeat;
+  }
+  
+  // change these gradients from white to your background colour if it differs
+  // gradient on the first cells to hide the left shadow
+  .rtable td:first-child,
+  .rtable--flip tbody tr:first-child {
+   
+    background-size: 20px 100%;
+  }
+  .rtable th {
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .rtable th,
+  .rtable td {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+  }
+  .rtable--flip {
+    display: flex;
+    overflow: hidden;
+    background: none;
+  }
+  .rtable--flip thead {
+    display: flex;
+    flex-shrink: 0;
+    min-width: min-content;
+  }
+  .rtable--flip tbody {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .rtable--flip tr {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    flex-shrink: 0;
+  }
+  .rtable--flip td,
+  .rtable--flip th {
+    display: block;
+  }
+  .rtable--flip td {
+    // border-collapse is no longer active
+    border-left: 0;
+  }
+  // border-collapse is no longer active
+  .rtable--flip th:not(:last-child),
+  .rtable--flip td:not(:last-child) {
+    border-bottom: 0;
+  }

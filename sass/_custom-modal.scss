@@ -23,13 +23,14 @@
     z-index: 10;
 }
   .custom-modal {
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 0 0 190px #333;
     position: fixed;
     display: none;
     width: 30rem;
-    min-height: 30rem;
-    background-color: white;
+   // min-height: 30rem;
+    background-color: #a6a6a6;
+    color: white;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -59,7 +60,10 @@
         }
     }
     &__title {
-      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
   }
 
@@ -68,8 +72,9 @@
     right: -1rem;
     top:-1rem;
     text-align: center;
-    padding: .45rem 0 0 0;
+    padding: 0;
     font-size: 2rem;
+    line-height: 1.1;
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
@@ -126,15 +131,21 @@ form .error + .error {
   border: 1px solid $success;
   color: $success;
 }
-.waiting-ct, .error-ct {
+.confirm-message {
   display: block;
   width: 100%;
-  padding: .65rem;
-  background-color: mix(white, $primary, 75%);
-  border: 1px solid $primary;
-  color: $primary;
+  padding: 1.5rem 1rem 2rem;
 }
 .modal-hints {
   font-size: .9rem;
   margin-top: 2rem;
+}
+
+
+.button-section, .button-section-foot  {
+  padding-top: .5rem;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }

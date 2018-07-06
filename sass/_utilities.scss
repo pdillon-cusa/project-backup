@@ -11,3 +11,27 @@
     font-size: .85rem;
     padding: .5rem;
 }
+
+.activate-espot {
+    font-size: .75rem;
+}
+
+.error {
+    color: $primary;
+    display: block;
+    width: 100%;
+    padding: .3rem .7rem .5rem;
+    background-color: mix(white, yellow, 50%);
+    margin-top: 2px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+
+img {
+    width: 100%;
+    max-width: 300px;
+}
+.img-ct { 
+    text-align: center;
+}

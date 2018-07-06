@@ -1,15 +1,18 @@
 .account-home {
 
-    padding-bottom: 5rem;
+    padding-bottom: 5   rem;
     
-    h2 {
-        margin: 3rem 0;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2.25rem;
+    .head-title {
         border-bottom: 1px solid #999;
         padding-bottom: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.25rem;
+        }
     }
+    
     a {
         text-decoration: underline;
     }
@@ -29,11 +32,6 @@
             
         }
         h3 { margin: 0; }
-        .img-ct { text-align: center; }
-        img {
-            width: 100%;
-            max-width: 300px;
-        }
         .status {
             display: inline-block;
             text-align: center;

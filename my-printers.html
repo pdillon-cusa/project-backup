@@ -15,7 +15,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body onLoad="loaded();">
+<!-- Overlay: Loading and Modals -->
+<div class="loading"></div>
+<div class="overlay"></div>
 
     <header>
         <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
@@ -51,7 +54,13 @@
     
     <div class="container account-home">
        
-        <h2>My Enrolled Printers</h2>
+        <div class="head-title">
+            <h2>My Enrolled Printers</h2>
+            <p>
+                View the status of all of your enrolled devices, as well as view order 
+                history and update address and payment details.
+            </p>
+        </div>
         
         <div class="list-item">
             <div class="row">
@@ -72,13 +81,13 @@
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
                     <ul class="product-actions">
-                        <li><a href="#">Order history</a></li>
+                        <li><a href="order-history.html">Order history</a></li>
                         <li><a href="#">Manage Billing</a></li>
                         <li><a href="#">Manage Shipping</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 rt-col-align">
-                    <button class="button alert">Cancel Enrollment</button>
+                    <button class="button alert" onclick="cancelServiceDialog()">Cancel Enrollment</button>
                 </div>
             </div>
         </div>
@@ -102,13 +111,24 @@
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
                      <ul class="product-actions">
-                        <li><a href="#">Order history</a></li>
+                        <li><a href="order-history.html">Order history</a></li>
                         <li><a href="#">Manage Billing</a></li>
                         <li><a href="#">Manage Shipping</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 rt-col-align">
                     <a href="#" class="instructions">Activation Instructions</a>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-3"></div>
+                <div class="col-sm-9">
+                    <span class="activate-espot">Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Integer nec odio. 
+                        Praesent libero. Sed cursus ante dapibus diam. 
+                        Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                        Duis sagittis ipsum. Praesent mauris.
+                    </span>
                 </div>
             </div>
         </div>
@@ -132,7 +152,7 @@
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
                        <ul class="product-actions">
-                            <li><a href="#">Order history</a></li>
+                            <li><a href="order-history.html">Order history</a></li>
                             <li><a href="#">Manage Billing</a></li>
                             <li><a href="#">Manage Shipping</a></li>
                         </ul>
@@ -149,6 +169,21 @@
         &copy; Canon 2018
     </div>
 </footer>
+
+
+<!-- Cancel Service Modal -->
+<div class="custom-modal" id="cancelServiceModal">
+    <div class="custom-modal__title">Confirm Cancellation</div>
+    <p class="confirm-message">
+        Are you sure you wanto to cancel enrollment?
+        Any pending ink orders will still be processed. 
+    </p>
+    <div class="button-section">
+        <button class="button alert" onclick="closeModal()">Exit</button>
+        <button class="button alert" onclick="closeModal()">Confirm</button>
+    </div>
+</div>
+<!-- / Cancel Service Modal -->
 
 <script src="js/vendor/jquery-3.3.1.js"></script>
 <script src="js/ars-global.js"></script>

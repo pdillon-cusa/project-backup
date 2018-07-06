@@ -1,6 +1,6 @@
 
 body {
-  background: $body-bg;
+  // background: $body-bg;
   margin: 4rem 0;
   font-family: $font-family;
   color: $gray-med;
@@ -9,7 +9,8 @@ body {
 header {
     background: $wht;
     position: fixed;
-    border-bottom: 3px solid $gray-x-lt;
+   // border-bottom: 3px solid $gray-x-lt;
+    box-shadow: 2px 2px 2px 2px #ccc;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
