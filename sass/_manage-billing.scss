@@ -1,0 +1,123 @@
+
+
+#pageWrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.head-wrapper, footer {
+    display: block;
+    width: 100%;
+    background-color: white;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .content-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+    bottom: 4rem;
+  }
+  .content-inner-wrap {
+    top: -1rem;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+.manage-billing {
+
+    h3 {
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+        font-weight: bold;
+    }
+    h5 {
+        padding: .5rem 0;
+        margin: .5rem 0;
+    }
+    a {
+        font-size: 12px;
+        color: #336699;
+        text-decoration: underline;
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .current-card {
+        font-size: 13px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+        .credit-icon {
+            float: left;
+            margin-right: .75rem;
+            font-size: 1.75rem !important;
+        }
+        span {
+            margin: .35rem .5rem;
+            display: inline-block;
+        }
+        .short {
+            width: 5rem;
+            display: inline-block;
+            padding: 2px;
+            height: 28px;
+            
+        }
+        #done {
+            display: none;
+          }
+          button {
+              float: right;
+          }
+    }
+      
+    .billing-address {
+       
+        .add-rem-ct {
+            @media (max-width: 767px) {
+                text-align: right;
+            }
+        }
+        .add-remove {
+            margin-right: 1rem;
+            height: 2rem;
+            display: inline-block;
+            
+         }
+        .form-group {
+            margin-bottom: .5rem;
+            label {
+                font-size: 12px;
+                margin-bottom: 0;
+                display: block;
+            }
+            input, select {
+                height: initial;
+                font-size: 12px;
+                padding: 4px 9px;
+                border: 1px solid #999;
+            }
+        }
+        .short-input {
+            width: 7rem;
+            display: inline-block;
+        }
+        .legend {
+            margin-top: 1.5rem;
+            font-size: 11px;
+            font-style: italic;
+        }
+        
+    }
+    
+    
+    
+}

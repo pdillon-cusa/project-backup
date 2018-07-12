@@ -5,17 +5,10 @@
 .pad-hrz-med {
     padding: 0 1.5rem;
 }
-
-.instructions {
-    color: #336699;
-    font-size: .85rem;
-    padding: .5rem;
+.primary {
+    color: $primary;
+    padding: 1rem 0;
 }
-
-.activate-espot {
-    font-size: .75rem;
-}
-
 .error {
     color: $primary;
     display: block;
@@ -25,13 +18,21 @@
     margin-top: 2px;
     font-weight: normal;
     font-size: 14px;
-  }
-
-
-img {
-    width: 100%;
-    max-width: 300px;
 }
-.img-ct { 
-    text-align: center;
+
+// Mixins
+@mixin ellipsis {
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+.required::before {
+        content: ' * ';
+        color: $primary;
+}
+// Overrides canon-external css, which puts 
+// asterisk after the label text...
+.required::after {
+    content: '' !important;
+}
+

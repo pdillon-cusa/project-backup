@@ -3,37 +3,40 @@ $td-pad: .65rem;
 $td-font: 11px; 
 
 .order-history {
-    margin: 7rem auto;
-
+    margin: 1rem auto 1rem;
     .printer-single {
         padding-bottom: 1rem;
         border-bottom: 1px solid #ccc;
     }
-
-    .primary {
-        color: $primary;
-        padding: 1rem 0;
-    }
-
     table {
+        table-layout: fixed;
         width: 100%;
-
+        max-height: 20rem;
+        overflow-y: scroll;
         thead {
             tr {
                 background-color: #ccc;
                 td {
-                    text-transform: uppercase;
-                    padding: $td-pad;
-                    font-weight: bold;
-                    font-size: $td-font;
+                  @include ellipsis;
+                  text-transform: uppercase;
+                  padding: $td-pad;
+                  font-weight: bold;
+                  font-size: $td-font;
+                  @media (max-width: 766px) {
+                    padding: 2px;
+                  }
                 }
             }
         }
         tr {
             td {
-                padding: $td-pad;
-                font-weight: normal;
-                font-size: $td-font;
+              @include ellipsis;
+              padding: $td-pad;
+              font-weight: normal;
+              font-size: $td-font;
+              @media (max-width: 766px) {
+                padding: 2px;
+              }
             }
         }
     } // end table

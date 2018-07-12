@@ -1,12 +1,12 @@
 
+// ----------- Mobile Slide ouut Menu ------------------
 $("#toggle").on('click', function() {
-	$('#mobile-menu').toggleClass("active");
-	console.log('in');
+	$('#menu').toggleClass("active");
 });
-
+// ------- Escape key close for convenieance -----------
 $(document).keydown(function(e) {
 	if (e.keyCode == 27) {
-		$('#mobile-menu').removeClass("active");
+		$('#menu').removeClass("active");
 		$('#btnControl').prop('checked', false);
 	}
 });
@@ -17,6 +17,23 @@ function cancelServiceDialog() {
 	$(".overlay").css('display', 'block');
 }
 
+// ----------- Order History Modal --------------------
+function orderHistoryDialog() {
+	$('#orderHistoryModal').show();
+	$(".overlay").css('display', 'block');
+}
+
+// ----------- Manage Billing Modal --------------------
+function manageBillingDialog() {
+	$('#manageBillingModal').show();
+	$(".overlay").css('display', 'block');
+}
+
+// ----------- Manage Shipping Modal --------------------
+function manageShippingDialog() {
+	$('#manageShippingModal').show();
+	$(".overlay").css('display', 'block');
+}
 
 //--------------- Page Loading Items --------------
 $(".overlay").css('display', 'block');
@@ -31,7 +48,9 @@ function loaded() {
 //-------------- Close Any Modal --------------------
 function closeModal() {
     $(".overlay").fadeOut(200);
-    $(".custom-modal").fadeOut(200);
+	$(".custom-modal").fadeOut(200);
+	$(".large-modal").fadeOut(200);
+	$(".med-modal").fadeOut(200);
 }
 $(document).keydown(function(e) {
     if (e.keyCode == 27) { closeModal() }
@@ -39,6 +58,32 @@ $(document).keydown(function(e) {
 $(".close-overlay").on("click", function () {
     closeModal();
 });
+
+
+
+//----------- Edit Credit Card Info -----------------
+// $('#edit').on("click", function() {
+// 	var originalText = $("#cc-num").html();
+// 	var newElement = $("<input id='cc-num-edited' type='text' class='form-control short' />");
+// 	var newElementText = newElement.val(originalText);
+// 	$("#cc-num").replaceWith(newElementText);
+// 	newElementText.focus();
+// 	$(this).hide();
+// 	$("#done").show();
+//   });
+  
+
+//   $('#done').on("click",function() {
+// 	  var newArea = $('input#cc-num-edited');   // Get textarea
+// 	  var newText = newArea.val();   // Get it's value
+// 	  var newElement = $("<span id='cc-num' />"); // Create new element
+// 	  var newElAndText = newElement.html(newText); 
+// 	  // ^ Add edited text (must use html method not val)
+// 	  newArea.replaceWith(newElAndText); // Replace with new element and text
+// 	  $("#edit").show();
+// 	  $(this).hide();
+  
+//   });  
 
 
 

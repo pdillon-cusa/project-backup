@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/vendor-assets/bootstrap.css">
   <link rel="stylesheet" href="css/canon-assets/canon-styles.css">
   <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/vendor/jquery-3.3.1.js"></script>
 </head>
 
 <body onLoad="loaded();">
@@ -22,17 +24,9 @@
 
     <header>
         <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
-        <nav id="dtop-menu">
+        <nav id="menu">
             <ul>
-                <li><a href="#"><i class="icon-user-circle-o"></i>Welcome, Peter</a></li>
-                <li><a href="#">(Not You?)</a></li>
-                <li><a href="#">Sign Out</a></li>
-                <li><a href="#">Change Password</a></li>
-            </ul>
-        </nav>
-        <nav id="mobile-menu">
-            <ul>
-                <li><a href="#">Welcome, Peter</a></li>
+                <li><a href="#"><i class="icon-user-circle-o"></i> Welcome, Peter</a></li>
                 <li><a href="#">(Not You?)</a></li>
                 <li><a href="#">Sign Out</a></li>
                 <li><a href="#">Change Password</a></li>
@@ -71,26 +65,27 @@
                 </div>
                 <div class="col-sm-6">
                     <h3>PIXMA G3200</h3>
-                    <h6>Serial Number 4785634573</h6>
+                    <ul class="product-actions">
+                        <li><a href="#" onclick="javascript:orderHistoryDialog()">Order history</a></li>
+                        <li><a href="#" onclick="javascript:manageBillingDialog()">Manage Billing</a></li>
+                        <li><a href="#" onclick="javascript:manageShippingDialog()">Manage Shipping</a></li>
+                    </ul>
                 </div>
                 <div class="col-sm-3 rt-col-align">
                     <div class="status status__active">Active</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3"></div>
+                <div class="col-sm-3">&nbsp;</div>
                 <div class="col-sm-6">
-                    <ul class="product-actions">
-                        <li><a href="order-history.html">Order history</a></li>
-                        <li><a href="#">Manage Billing</a></li>
-                        <li><a href="#">Manage Shipping</a></li>
-                    </ul>
+                    <span class="serial">Serial Number 4785634573</span>
                 </div>
-                <div class="col-sm-3 rt-col-align">
-                    <button class="button alert" onclick="cancelServiceDialog()">Cancel Enrollment</button>
+                <div class="col-sm-3 text-right">
+                    <button class="button alert cancel" onclick="cancelServiceDialog()">Cancel Enrollment</button>
                 </div>
             </div>
         </div>
+
 
         <div class="list-item">
             <div class="row">
@@ -101,27 +96,27 @@
                 </div>
                 <div class="col-sm-6">
                     <h3>PIXMA G3200</h3>
-                    <h6>Serial Number 4785634573</h6>
+                    <ul class="product-actions">
+                        <li><a href="#" onclick="javascript:orderHistoryDialog()">Order history</a></li>
+                        <li><a href="#" onclick="javascript:manageBillingDialog()">Manage Billing</a></li>
+                        <li><a href="#" onclick="javascript:manageShippingDialog()">Manage Shipping</a></li>
+                    </ul>
                 </div>
                 <div class="col-sm-3 rt-col-align">
                     <div class="status status__ready">Ready To Activate</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3"></div>
+                <div class="col-sm-3">&nbsp;</div>
                 <div class="col-sm-6">
-                     <ul class="product-actions">
-                        <li><a href="order-history.html">Order history</a></li>
-                        <li><a href="#">Manage Billing</a></li>
-                        <li><a href="#">Manage Shipping</a></li>
-                    </ul>
+                    <span class="serial">Serial Number 4785634573</span>
                 </div>
-                <div class="col-sm-3 rt-col-align">
+                <div class="col-sm-3 text-right">
                     <a href="#" class="instructions">Activation Instructions</a>
                 </div>
             </div>
             <div class="row">
-                    <div class="col-sm-3"></div>
+                <div class="col-sm-3">&nbsp;</div>
                 <div class="col-sm-9">
                     <span class="activate-espot">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit. Integer nec odio. 
@@ -133,8 +128,9 @@
             </div>
         </div>
 
+
         <div class="list-item">
-            <div class="row">
+                <div class="row">
                     <div class="col-sm-3">
                         <div class="img-ct">
                             <img src="img/printer.jpg">
@@ -142,25 +138,24 @@
                     </div>
                     <div class="col-sm-6">
                         <h3>PIXMA G3200</h3>
-                        <h6>Serial Number 4785634573</h6>
+                        <ul class="product-actions">
+                            <li><a href="#" onclick="javascript:orderHistoryDialog()">Order history</a></li>
+                            <li><a href="#" onclick="javascript:manageBillingDialog()">Manage Billing</a></li>
+                            <li><a href="#" onclick="javascript:manageShippingDialog()">Manage Shipping</a></li>
+                        </ul>
                     </div>
                     <div class="col-sm-3 rt-col-align">
                         <div class="status status__cancelled">Cancelled</div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3">&nbsp;</div>
                     <div class="col-sm-6">
-                       <ul class="product-actions">
-                            <li><a href="order-history.html">Order history</a></li>
-                            <li><a href="#">Manage Billing</a></li>
-                            <li><a href="#">Manage Shipping</a></li>
-                        </ul>
+                        <span class="serial no-sibling">Serial Number 4785634573</span>
                     </div>
-                    <div class="col-sm-3 rt-col-align"></div>
+                    <div class="col-sm-3">&nbsp;</div>
                 </div>
             </div>
-        </div>
 
     </div>
     
@@ -185,7 +180,477 @@
 </div>
 <!-- / Cancel Service Modal -->
 
-<script src="js/vendor/jquery-3.3.1.js"></script>
+
+<!-- Order History Modal -->
+<div class="large-modal" id="orderHistoryModal">
+    <div class="close-overlay">&times;</div>
+    
+    <header class="head-wrapper">
+            <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
+    </header>
+        
+    <div class="content-wrapper">
+        <article class="content-inner-wrap">
+            <div class="order-history">
+
+                <div class="row printer-single">
+                    <div class="col-sm-2">
+                        <div class="img-ct">
+                            <img src="img/printer.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3>PIXMA G3200</h3>
+                        <h6>Serial Number 4785634573</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="primary">Order History</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Order Number</td>
+                                    <td>Order Date</td>
+                                    <td>Status</td>
+                                    <td>Printer Model</td>
+                                    <td>Cartridge Name</td>
+                                    <td>Cartridge SKU</td>
+                                    <td>Qty</td>
+                                    <td>Total Price</td>
+                                    <td>Tracking Number</td>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td title="36428736487">36428736487</td>
+                                <td title="09-31-2018">09-31-2018</td>
+                                <td title="In Process">In Process</td>
+                                <td title="PIXMA TS9020">PIXMA TS9020</td>
+                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
+                                <td title="27857836">27857836</td>
+                                <td title="1">1</td>
+                                <td title="$15.99">$15.99</td>
+                                <td title="3897426862487628347">3897426862487628347</td>
+                            </tr>
+                            <tr>
+                                <td title="36428736487">36428736487</td>
+                                <td title="09-31-2018">09-31-2018</td>
+                                <td title="In Process">In Process</td>
+                                <td title="PIXMA TS9020">PIXMA TS9020</td>
+                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
+                                <td title="27857836">27857836</td>
+                                <td title="1">1</td>
+                                <td title="$15.99">$15.99</td>
+                                <td title="3897426862487628347">3897426862487628347</td>
+                            </tr>
+                            <tr>
+                                <td title="36428736487">36428736487</td>
+                                <td title="09-31-2018">09-31-2018</td>
+                                <td title="In Process">In Process</td>
+                                <td title="PIXMA TS9020">PIXMA TS9020</td>
+                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
+                                <td title="27857836">27857836</td>
+                                <td title="1">1</td>
+                                <td title="$15.99">$15.99</td>
+                                <td title="3897426862487628347">3897426862487628347</td>
+                            </tr>
+                            <tr>
+                                <td title="36428736487">36428736487</td>
+                                <td title="09-31-2018">09-31-2018</td>
+                                <td title="In Process">In Process</td>
+                                <td title="PIXMA TS9020">PIXMA TS9020</td>
+                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
+                                <td title="27857836">27857836</td>
+                                <td title="1">1</td>
+                                <td title="$15.99">$15.99</td>
+                                <td title="3897426862487628347">3897426862487628347</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="button-section">
+        <button class="button alert" onclick="closeModal()">Close</button>
+    </div>
+</div>
+<!-- / Order History Modal -->
+
+
+
+<!-- Manage Billing Modal -->
+<div class="med-modal" id="manageBillingModal">
+    <div class="close-overlay">&times;</div>
+
+
+
+        <header class="head-wrapper">
+            <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
+        </header>
+
+        
+        <div class="content-wrapper">
+          <article class="content-inner-wrap">
+
+                <div class="manage-billing">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="primary">Manage Payment Method</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="current-card">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <i class="icon-cc-visa credit-icon"></i>
+                                    <button id="edit">Edit</button>
+                                    <button id="done">Done</button>
+                                    <span>Visa ending in</span>
+                                    <span id="cc-num">6169</span>
+                                    <span id="cc-date">
+                                            <select class="card-expiry-month required" readonly disabled="true">
+                                                </select>
+                                                <script type="text/javascript">
+                                                    $(document).ready(function() {
+                                                        //populate the expiration month dropdown
+                                                        var select = $(".card-expiry-month");
+                                                        for (var i = 1; i <= 12; i++) {
+                                                            select.append($("<option value='"+i+"'>"+i+"</option>"))
+                                                        }
+                                                    });
+                                                </script>
+                                                 /
+                                                <select class="card-expiry-year required" readonly disabled="true"></select>
+                                                <script type="text/javascript">
+                                                    $(document).ready(function() {
+                                                        var select = $(".card-expiry-year"),
+                                                            year = new Date().getFullYear();
+                                                        for (var i = 1; i < 10; i++) {
+                                                            select.append($("<option value='"+(i + year)+"' "+(i === 0 ? "selected" : "")+">"+(i + year)+"</option>"))
+                                                        }
+                                                    });
+                                                </script>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="primary">Billing Address</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="billing-address">
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="text@text.com">address-1@email.com</option>
+                                            <option value="text@text.com">address-2@email.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="add-remove"><a href="#">Add New</a></span>
+                                    <span class="add-remove"><a href="#">Remove</a></span>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">Nickname</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="">First Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="middle">MI</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="lastname" class="required">Last Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">Street Address</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="form-group">
+                                        <label for="middle">Suite / Apt</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">City</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">State</label>
+                                        <select class="form-control" required>
+                                            <option value="">New York</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="">Zip</label>       
+                                        <input type="text" class="form-control short-input" required> - <input type="text" class="form-control short-input">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="">Primary Phone</label>    
+                                        <select class="form-control">
+                                            <option value="">Home</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="">&nbsp;</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="">Ext</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="required legend">Required fields.</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                </div>
+                
+                  
+          </article>
+        </div>
+        
+        <div class="button-section">
+            <button class="button alert" onclick="closeModal()">Save</button>
+        </div>
+
+</div>
+<!-- / Manage Billing Modal -->
+
+
+
+
+<!-- Manage Shipping Modal -->
+<div class="med-modal" id="manageShippingModal">
+    <div class="close-overlay">&times;</div>
+    
+        <header class="head-wrapper">
+            <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
+        </header>
+    
+        <div class="content-wrapper">
+            <article class="content-inner-wrap">
+
+                <div class="manage-billing">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="primary">Manage Shipping Address</h3>
+                            </div>
+                        </div>
+                    
+                
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="primary">Shipping Address</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="billing-address">
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="text@text.com">address-1@email.com</option>
+                                            <option value="text@text.com">address-2@email.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 add-rem-ct">
+                                    <span class="add-remove"><a href="#">Add New</a></span>
+                                    <span class="add-remove"><a href="#">Remove</a></span>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">Nickname</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="">First Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="middle">MI</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="lastname" class="required">Last Name</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">Street Address</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="form-group">
+                                        <label for="middle">Suite / Apt</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">City</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="" class="required">State</label>
+                                        <select class="form-control" required>
+                                            <option value="">New York</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="">Zip</label>       
+                                        <input type="text" class="form-control short-input" required> - <input type="text" class="form-control short-input">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="">Primary Phone</label>    
+                                        <select class="form-control">
+                                            <option value="">Home</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-group">
+                                        <label for="">&nbsp;</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <label for="">Ext</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="required legend">Required fields.</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                </div>
+                
+                    
+            </article>
+        </div>
+        
+        <div class="footer button-section">
+            <button class="button alert" onclick="closeModal()">Save</button>
+        </div>
+    
+    </div>
+    <!-- / Manage Shipping Modal -->
+
+
+
+
 <script src="js/ars-global.js"></script>
 
 </body>
