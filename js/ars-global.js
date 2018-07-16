@@ -1,3 +1,9 @@
+// ----------- Toggle Icon For Mobile ------------------
+$(document).ready( function() {       
+	$('.product-row').on('click', function() {
+		$(this).find('.cbtn').toggleClass('fa-angle-down fa-angle-up');
+	});
+});
 
 // ----------- Mobile Slide ouut Menu ------------------
 $("#toggle").on('click', function() {

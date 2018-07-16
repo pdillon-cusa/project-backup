@@ -8,6 +8,64 @@ $td-font: 11px;
         padding-bottom: 1rem;
         border-bottom: 1px solid #ccc;
     }
+    img {
+      width: 100%;
+    }
+    h3 {
+      margin: 0;
+      font-weight: bold;
+    }
+    .serial {
+      font-size: 12px;
+      font-weight: bold;
+      font-style: italic;
+      
+      &.no-sibling {
+          margin: 0;
+      }
+   }
+
+   .product-row {
+      border-bottom: 1px solid #999;
+      padding-bottom: 1rem;
+
+      a { color: $primary; }
+      p {
+        font-weight: initial;
+      }
+
+    &__img {
+      width: 4rem;
+      height: 4rem;
+      float: left;
+    }
+    &__specs {
+      margin-left: 5rem;
+      h1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+    &__more {
+      width: 2rem;
+      height: 4rem;
+      float: right;
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+    }
+    .product-details {
+      margin-left: 5rem;
+      font-size: 14px;
+      p {
+        font-weight: initial;
+      }
+    }
+
+
+   }
+
+
     table {
         table-layout: fixed;
         width: 100%;
@@ -32,7 +90,7 @@ $td-font: 11px;
             td {
               @include ellipsis;
               padding: $td-pad;
-              font-weight: normal;
+              font-weight: bold;
               font-size: $td-font;
               @media (max-width: 766px) {
                 padding: 2px;

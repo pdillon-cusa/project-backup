@@ -19,7 +19,7 @@
 
     .list-item {
         border-bottom: 1px solid #999;
-        margin-top: 2rem;
+        margin-top: 3rem;
         padding-bottom: 1rem;
         @media (max-width: 767px) {
             text-align: center;
@@ -58,7 +58,7 @@
             width: 100%;
             max-width: 300px;            
             @media (max-width: 767px) {
-                max-width: 200px;
+                max-width: 160px;
             }
         }
         .img-ct { 
@@ -117,7 +117,7 @@
             letter-spacing: 1px;
             @media (max-width: 767px) {
                 position: absolute;
-                margin-top: -340px;
+                margin-top: -335px;
                 right: 0;
             }
             &__active {

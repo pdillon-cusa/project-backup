@@ -72,28 +72,13 @@
     box-shadow: 0 0 190px #333;
     position: fixed;
     display: none;
-    width: 30rem;
-   // min-height: 30rem;
-    background-color: #a6a6a6;
-    color: white;
+    max-width: 30rem;
+    width: 90%;
+    background-color: white;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    .errant-email-list {
-      padding: .3rem;
-      border: 1px solid $primary;
-      background-color: $primary-x-lt;
-      p.list {
-        padding: .3rem;
-        margin: .2rem .5rem;
-        font-size: .9rem;
-        border-bottom: 1px solid $primary;
-        &:last-child {
-          border-bottom: 0;
-        }
-      }
-    }
     select {
         width: 100%;
         padding: .4rem;
@@ -105,7 +90,7 @@
         }
     }
     &__title {
-      text-align: center;
+     // text-align: center;
       font-size: 1.3rem;
       font-weight: bold;
       margin-bottom: 1rem;
@@ -180,7 +165,7 @@ form .error + .error {
 .confirm-message {
   display: block;
   width: 100%;
-  padding: 1.5rem 1rem 2rem;
+  font-weight: bold;
 }
 .modal-hints {
   font-size: .9rem;
@@ -192,4 +177,8 @@ form .error + .error {
   text-align: right;
   width: 100%;
   padding: 1rem;
+  box-shadow: 0 -15px 30px -16px #999;
+}
+.rem-box {
+  box-shadow: none;
 }

@@ -1,10 +1,23 @@
-@font-face {
-  font-family: 'OpticSans Light';
-  src: url('fonts/OpticSans-101-Light.eot') format('woff');
-  src: url('fonts/OpticSans-101-Light.woff') format('woff');
+// @font-face {
+//   font-family: 'OpticSans Light';
+//   src: url('fonts/OpticSans-101-Light.eot') format('woff');
+//   src: url('fonts/OpticSans-101-Light.woff') format('woff');
+// }
+
+@font-face{
+  font-family:apex;
+  src:url('fonts/apex-book.woff') format("woff")
 }
-
-
+@font-face{
+  font-family:apex;
+  src:url('fonts/apex-medium.woff') format("woff");
+  font-weight:600;
+}
+@font-face{
+  font-family:apex;
+  src:url('fonts/apex-light.woff') format("woff");
+  font-weight:300;
+}
 
 @font-face {
   font-family: 'ars-admin';
@@ -32,6 +45,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-arrow-down:before {
+  content: "\e313";
+}
+.icon-arrow-left:before {
+  content: "\e314";
+}
+.icon-arrow-right:before {
+  content: "\e315";
+}
+.icon-arrow-up:before {
+  content: "\e316";
+}
 .icon-cc-visa:before {
   content: "\f1f0";
 }

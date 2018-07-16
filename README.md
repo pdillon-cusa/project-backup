@@ -6,6 +6,6 @@ Run SASS:
 ------------
 ` sass --watch sass:css --style compressed `
 
-
-Project Backup
+PYTHON LOCAL SERVER:
 ------------
+` python -m http.server 8081 `
