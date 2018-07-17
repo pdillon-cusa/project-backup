@@ -27,14 +27,16 @@
         .product-actions {
             margin: 0;
             padding: 0;
-            font-size: 1rem;
-            font-weight: bold;
+            font-size: .8rem;
             color: $gray-dark;
             text-transform: uppercase;
+            @media (max-width: 767px) {
+                font-size: 1.2rem;
+            }
             li {
                 display: inline-block;
                 margin-left: -2px;
-                padding: .5rem;
+                padding: .2rem .3rem;
                 padding-left: 0;
                 @media (max-width: 766px) {
                     display: block;
