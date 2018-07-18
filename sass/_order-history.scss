@@ -2,6 +2,22 @@
 $td-pad: .65rem;
 $td-font: 11px; 
 
+
+.full-table-data {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    padding: 0 .5rem;
+  }
+}
+.mobile-table-data {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+
 .order-history {
     margin: 1rem auto 1rem;
     .printer-single {
