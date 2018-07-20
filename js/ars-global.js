@@ -1,7 +1,7 @@
 // ----------- Toggle Icon For Mobile ------------------
 $(document).ready( function() {       
 	
-	$('.product-row').on('click', function() {
+	$('.product-target').on('click', function() {
 		$(this).find('.cbtn').toggleClass('fa-angle-down fa-angle-up');
 	});
 
