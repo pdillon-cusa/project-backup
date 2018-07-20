@@ -34,6 +34,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+        
     header {
       position: initial;
       height: 5rem;
@@ -46,6 +47,7 @@
       padding: 1rem;
       top: 0;
       z-index: 1;
+     
       .logo {
           float: left;
           background: url('../img/canon-logo.png') no-repeat;

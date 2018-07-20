@@ -1,8 +1,34 @@
 // ----------- Toggle Icon For Mobile ------------------
 $(document).ready( function() {       
+	
 	$('.product-row').on('click', function() {
 		$(this).find('.cbtn').toggleClass('fa-angle-down fa-angle-up');
 	});
+
+	$("#addNewBilling").on('click', function () {
+		$('#billing-address-select').toggle();
+		$(this).closest('form').find("input[type=text], textarea").val("");
+	});
+
+	$("#addNewShipping").on('click', function () {
+		$('#shipping-address-select').toggle();
+		$(this).closest('form').find("input[type=text], textarea").val("");
+	});
+
+	$("#resetShipping").on('click', function () {
+		$('#shipping-address-select').show();
+		$(this).closest('form')[0].reset();
+	});
+
+	$("#resetBilling").on('click', function () {
+		$('#billing-address-select').show();
+		$(this).closest('form')[0].reset();
+	});
+
+
+
+	
+
 });
 
 // ----------- Mobile Slide ouut Menu ------------------
@@ -64,6 +90,15 @@ $(document).keydown(function(e) {
 $(".close-overlay").on("click", function () {
     closeModal();
 });
+
+
+// $('#addNew').on('click', function() {
+// 	//$('#billing-address-select').hide();
+// 	alert('in')
+// 	document.getElementById('billing-address')[0].reset;
+// });
+
+
 
 
 
