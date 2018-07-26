@@ -45,7 +45,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-tool-tip:before {
+  content: "\f059";
+}
 .icon-arrow-down:before {
   content: "\e313";
 }

@@ -1,0 +1,63 @@
+// Tooltip
+.maxCoverageTooltip {
+    display: none;
+    padding: 0.95rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) -2px 2px 12px;
+    background-color: white;
+    border: 1px solid #666;
+    color: $primary;
+    width: 20rem;
+    animation: move .4s ease 1;
+    position: absolute;
+    z-index: 5;
+    right: 1rem;
+    p {
+      font: 12px Arial;
+      line-height: 16px;
+      margin: 0;
+    }
+  &:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 100px;
+    border-style: solid;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #999;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+   &:after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 103px;
+    border-style: solid;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    display: block;
+    width: 0;
+    z-index: 1;
+  }
+}
+.close-tooltip {
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+    cursor: pointer;
+    float: right;
+    margin: -14px -6px 0 0;
+    color: #666;
+    &:hover {
+        color: $section-3C;
+    }
+}
+@keyframes move {
+    0% { transform: translateY(10px); }
+}

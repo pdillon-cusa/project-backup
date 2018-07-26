@@ -386,7 +386,6 @@
 <!-- / Order History Modal -->
 
 
-
 <!-- Manage Billing Modal -->
 <form>
     <div class="med-modal" id="manageBillingModal">
@@ -396,7 +395,6 @@
             <div class="logo"><h1>Canon Auto-Replenishment Printers</h1></div>
         </header>
 
-            
             <div class="content-wrapper">
                 <article class="content-inner-wrap">
 
@@ -411,14 +409,38 @@
                         <div class="current-card">
                             <div class="row">
                                 <div class="col-sm-12 row-mar">
-                                    <div class="current-card__radio"><input type="radio" name="payment" value="VISA" id="pay_by_visa_1"></div>
-                                    <div class="current-card__cc-img"><img class="img-responsive" alt="VISA - Credit or Debit Cards" src="../img/VISA.jpg"></div>
-                                    <div class="current-card__radio"><input type="radio" name="payment" value="Master Card" id="pay_by_mc_1"></div>
-                                    <div class="current-card__cc-img"><img class="img-responsive" alt="MASTER CARD - Credit or Debit Cards" src="../img/MC.png"></div>
-                                    <div class="current-card__radio"><input type="radio" name="payment" value="AMEX" id="pay_by_amex_1"></div>
-                                    <div class="current-card__cc-img"><img class="img-responsive" alt="AMERICAN EXPRESS - Credit or Debit Cards" src="../img/AXP.jpg"></div>
-                                    <div class="current-card__radio"><input type="radio" name="payment" value="Discover" id="pay_by_disc_1"></div>
-                                    <div class="current-card__cc-img"><img class="img-responsive" alt="DISCOVER - Credit or Debit Cards" src="../img/DISC.jpg"></div>
+                                    <div class="current-card__radio">
+                                        <input type="radio" name="payment" value="VISA" id="pay_by_visa_1">
+                                    </div>
+                                    <div for="pay_by_visa_1" class="current-card__cc-img">
+                                        <label for="pay_by_visa_1">
+                                            <img class="img-responsive" alt="VISA - Credit or Debit Cards" src="../img/VISA.jpg">
+                                        </label>
+                                    </div>
+                                    <div class="current-card__radio">
+                                        <input type="radio" name="payment" value="Master Card" id="pay_by_mc_1">
+                                    </div>
+                                    <div class="current-card__cc-img">
+                                        <label for="pay_by_mc_1">
+                                            <img class="img-responsive" alt="MASTER CARD - Credit or Debit Cards" src="../img/MC.png">
+                                        </label>
+                                    </div>
+                                    <div class="current-card__radio">
+                                        <input type="radio" name="payment" value="AMEX" id="pay_by_amex_1">
+                                    </div>
+                                    <div class="current-card__cc-img">
+                                        <label for="pay_by_amex_1">
+                                            <img class="img-responsive" alt="AMERICAN EXPRESS - Credit or Debit Cards" src="../img/AXP.jpg">
+                                        </label>
+                                    </div>
+                                    <div class="current-card__radio">
+                                        <input type="radio" name="payment" value="Discover" id="pay_by_disc_1">
+                                    </div>
+                                    <div class="current-card__cc-img">
+                                        <label for="pay_by_disc_1">
+                                            <img class="img-responsive" alt="DISCOVER - Credit or Debit Cards" src="../img/DISC.jpg">
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -426,13 +448,19 @@
                                 <div class="col-xs-6">
                                     <div class="form-group">
                                         <label for="">Card Number</label>
-                                        <input type="text" class="form-control" value="****-****-6169">
+                                        <input type="text" class="form-control"  placeholder="Debit/Credit Card Number" value="************3456">
                                     </div>
                                 </div>
                                 <div class="col-xs-6">
                                     <div class="form-group">
-                                        <label for="">Security Code</label>
-                                        <input type="text" class="form-control" type="text" value="Security Code">
+                                        <label for="">Security Code <i class="icon-tool-tip"  id="showTooltip"></i></label>
+                                        <input type="text" class="form-control" type="text" placeholder="Security Code">
+                                    </div>
+                                    <div class="maxCoverageTooltip" id="maxTooltip">
+                                        <span class="close-tooltip">
+                                            <span>&times;</span>
+                                        </span>
+                                        <p>CVV2 stands for card verification value number. CVV2 is an important security feature for credit card transactions on the Internet and over the phone. For Visa, it is the three-digit number printed in the signature space on the back of the credit card above the signature space.</p>
                                     </div>
                                 </div>
                             </div>
@@ -443,6 +471,16 @@
                                         <select class="form-control">
                                             <option>Jan</option>
                                             <option>Feb</option>
+                                            <option>Mar</option>
+                                            <option>Apr</option>
+                                            <option>May</option>
+                                            <option>Jun</option>
+                                            <option>Jul</option>
+                                            <option>Aug</option>
+                                            <option selected>Sep</option>
+                                            <option>Oct</option>
+                                            <option>Nov</option>
+                                            <option>Dec</option>
                                         </select>
                                     </div>
                                 </div>
@@ -452,7 +490,7 @@
                                         <select class="form-control">
                                             <option>2018</option>
                                             <option>2019</option>
-                                            <option>2020</option>
+                                            <option selected>2020</option>
                                             <option>2021</option>
                                         </select>
                                     </div>
@@ -479,8 +517,8 @@
                                 </div>
                                 <div class="col-sm-7 add-rem-ct">
                                     <a href="#" class="add-remove" id="addNewBilling">Add New</a>
-                                    <a href="#" class="add-remove">Remove</a>
-                                    <a href="#" class="add-remove" id="resetBilling">Reset</a>
+                                    <a href="#" class="add-remove" id="removeBilling">Remove</a>
+                                    <a href="#" class="add-remove" id="resetBilling">Cancel</a>
                                 </div>
                             </div>
                 
@@ -488,7 +526,7 @@
                                 <div class="col-sm-5">
                                     <div class="form-group">
                                         <label for="" class="required">Nickname</label>
-                                        <input type="text" class="form-control" required value="Hamptons House">
+                                        <input type="text" id="test" class="form-control" required value="Hamptons House">
                                     </div>
                                 </div>
                             </div>
@@ -545,8 +583,9 @@
                                 <div class="col-sm-5">
                                     <div class="form-group">
                                         <label for="" class="required">State</label>
-                                        <select class="form-control" required>
-                                            <option value="">New York</option>
+                                        <select class="form-control" id="billingstate" required>
+                                            <option value="0">Choose</option>
+                                            <option value="NY" selected>New York</option>
                                         </select>
                                     </div>
                                 </div>
@@ -571,9 +610,10 @@
                                 <div class="col-xs-4">
                                     <div class="form-group">
                                         <label for="">Phone</label>    
-                                        <select class="form-control">
-                                            <option value="">Cell</option>
-                                            <option value="">Home</option>
+                                        <select class="form-control" id="billingphone">
+                                            <option value="0">Choose</option>
+                                            <option value="cell" selected>Cell</option>
+                                            <option value="home">Home</option>
                                         </select>
                                     </div>
                                 </div>
@@ -610,8 +650,6 @@
 <!-- / Manage Billing Modal -->
 
 
-
-
 <!-- Manage Shipping Modal -->
 <form>
     <div class="med-modal" id="manageShippingModal">
@@ -638,7 +676,7 @@
                                 </div>
                             </div>
                             
-                            <div class="billing-address">
+                            <div class="shipping-address">
                     
                                 <div class="row">
                                     <div class="col-sm-5">
@@ -651,8 +689,8 @@
                                     </div>
                                     <div class="col-sm-7 add-rem-ct">
                                         <a href="#" class="add-remove" id="addNewShipping">Add New</a>
-                                        <a href="#" class="add-remove">Remove</a>
-                                        <a href="#" class="add-remove" id="resetShipping">Reset</a>
+                                        <a href="#" class="add-remove" id="removeShipping">Remove</a>
+                                        <a href="#" class="add-remove" id="resetShipping">Cancel</a>
                                     </div>
                                 </div>
                     
@@ -717,8 +755,9 @@
                                     <div class="col-sm-5">
                                         <div class="form-group">
                                             <label for="" class="required">State</label>
-                                            <select class="form-control" required>
-                                                <option value="">New York</option>
+                                            <select class="form-control" id="shippingstate" required>
+                                                <option value="0">Choose</option>
+                                                <option value="NY" selected>New York</option>
                                             </select>
                                         </div>
                                     </div>
@@ -782,8 +821,6 @@
     </div>
 </form>
 <!-- / Manage Shipping Modal -->
-
-
 
 <script src="js/ars-global.js"></script>
 

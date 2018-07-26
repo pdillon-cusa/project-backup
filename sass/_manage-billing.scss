@@ -71,6 +71,13 @@
                 font-size: 12px;
                 margin-bottom: 0;
                 display: block;
+                i {
+                    color: $primary;
+                    font-size: 16px;
+                    margin-top: -1px;
+                    position: absolute;
+                    margin-left: 5px;
+                }
             }
             input, select {
                 height: initial;
@@ -100,11 +107,13 @@
         &__cc-img {
             display: inline-block;
             margin-right: .5rem;
-            img {
-                max-height: 34px;
-                @media (max-width: 766px) {
-                    max-height: 22px;
-                  }
+            label {
+                img {
+                    max-height: 34px;
+                    @media (max-width: 766px) {
+                        max-height: 22px;
+                    }
+                }
             }
         }
         .row-mar {
@@ -127,7 +136,7 @@
           }
     }
       
-    .billing-address {
+    .billing-address, .shipping-address {
         
         .form-group {
             margin-bottom: .5rem;
