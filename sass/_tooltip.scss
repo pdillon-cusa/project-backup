@@ -7,11 +7,14 @@
     background-color: white;
     border: 1px solid #666;
     color: $primary;
-    width: 20rem;
+    width: 18rem;
     animation: move .4s ease 1;
     position: absolute;
     z-index: 5;
     right: 1rem;
+    @media (max-width: 450px) {
+      width: 180%;
+    }
     p {
       font: 12px Arial;
       line-height: 16px;
@@ -21,7 +24,7 @@
     content: "";
     position: absolute;
     top: -30px;
-    right: 100px;
+    right: 65px;
     border-style: solid;
     border-top: 15px solid transparent;
     border-left: 15px solid transparent;
@@ -35,7 +38,7 @@
     content: "";
     position: absolute;
     top: -24px;
-    right: 103px;
+    right: 68px;
     border-style: solid;
     border-top: 12px solid transparent;
     border-left: 12px solid transparent;

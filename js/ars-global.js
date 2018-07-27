@@ -7,37 +7,14 @@ $(document).ready( function() {
 	});
 
 	// ----------------- Clear Forms -----------------------
-	$('#resetBilling, #resetShipping ').hide();
-
 	$("#addNewBilling").on('click', function() {
-		$('#billing-address-select').hide();
-		$('#removeBilling').hide();
-		$('#resetBilling').show();
 		$(this).closest('.billing-address').find("input").val("");
 		$(this).closest('.billing-address').find("#billingstate, #billingphone").val("0");
 	});
-	$("#resetBilling").on('click', function() {
-		$('#billing-address-select').show();
-		$('#removeBilling').show();
-	 	$(this).hide();
-		$(this).closest('form')[0].reset();
-	});
-	//----------------------------------------------------
 	$("#addNewShipping").on('click', function() {
-		$('#shipping-address-select').toggle();
-		$('#removeShipping').hide();
-		$('#resetShipping').show();
 		$(this).closest('.shipping-address').find("input").val("");
-		$(this).closest('.shipping-address').find("#shippingstate").val("0");
-		
+		$(this).closest('.shipping-address').find("#shippingstate, #shippingPhone").val("0");
 	});
-	$("#resetShipping").on('click', function() {
-		$('#shipping-address-select').show();
-		$('#removeShpping').show();
-	 	$(this).hide();
-		$(this).closest('form')[0].reset();
-	});
-	//----------------------------------------------------
 	
 
 	// ----------- Mobile Slide ouut Menu ------------------

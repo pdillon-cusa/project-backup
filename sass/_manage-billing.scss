@@ -100,7 +100,7 @@
             display: inline-block;
             position: relative;
             top: -12px;
-            @media (max-width: 766px) {
+            @media (max-width: 767px) {
                 top: -3px;
               }
         }
@@ -110,7 +110,7 @@
             label {
                 img {
                     max-height: 34px;
-                    @media (max-width: 766px) {
+                    @media (max-width: 767px) {
                         max-height: 22px;
                     }
                 }
