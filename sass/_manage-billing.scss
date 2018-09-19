@@ -18,8 +18,11 @@
 .content-wrapper {
     width: 100%;
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     bottom: 4rem;
+    &.top-margin {
+        margin-top: 2rem;
+    }
 }
 .content-inner-wrap {
     height: 100%;
