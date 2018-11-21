@@ -2,15 +2,17 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 .5rem 0;
-    min-width: rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
     font-family: inherit;
-    padding: 0.85em 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.85rem 1rem;
     -webkit-appearance: none;
     border: 1px solid transparent;
     border-radius: 0;
     -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    font-size: 0.8rem;
     line-height: 1;
     text-align: center;
     cursor: pointer;
@@ -21,14 +23,27 @@
 
 .button:hover, .button:focus {
     background-color: #14679e;
+    text-decoration: none;
 }
 //--------------
 .button.alert {
     background-color: $primary;
 }
+.button.alert.cancel-enrollment {
+    padding: 10px 5px;
+}
 .button.alert:hover, .button.alert:focus {
     background-color: $primary-hover;
     text-shadow: 1px 1px 0 $primary-hover;
+}
+//--------------
+.button.cancel {
+    background-color: #333;
+}
+.button.cancel:hover, .button.cancel:focus {
+    background-color: $cancel-hover;
+    text-shadow: 1px 1px 0 $cancel-hover;
+    color: white;
 }
 //--------------
 .button.info {

@@ -18,7 +18,7 @@
   <script src="js/canon.js"></script>
 </head>
 
-<body onLoad="loaded();">
+<body onLoad="loaded();"> 
 <!-- Overlay: Loading and Modals -->
 <div class="loading"></div>
 <div class="overlay"></div>
@@ -64,13 +64,14 @@
                         <img src="img/printer.jpg">
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-9">
                     <h2>PIXMA G3200</h2>
                     <span class="serial">Serial Number: 4785634573</span>
                 </div>
-                <div class="col-sm-3 rt-col-align">
+                <div class="status status__active">Active</div>
+                <!-- <div class="col-sm-3 rt-col-align">
                     <div class="status status__active">Active</div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-sm-9">
@@ -81,7 +82,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 text-right">
-                    <button class="button alert cancel margin-top-sm" onclick="cancelServiceDialog()">Cancel Enrollment</button>
+                    <button class="button alert cancel-enrollment margin-top-sm" onclick="cancelServiceDialog()">Cancel Enrollment</button>
                 </div>
             </div>
             <div class="row">
@@ -104,13 +105,14 @@
                         <img src="img/printer.jpg">
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-9">
                     <h2>PIXMA G3200</h2>
                     <span class="serial">Serial Number: 4785634573</span>
                 </div>
-                <div class="col-sm-3 rt-col-align">
+                <div class="status status__ready">Ready To Activate</div>
+                <!-- <div class="col-sm-3 rt-col-align">
                     <div class="status status__ready">Ready To Activate</div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-sm-9">
@@ -144,13 +146,11 @@
                             <img src="img/printer.jpg">
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <h2>PIXMA G3200</h2>
                         <span class="serial no-sibling">Serial Number: 4785634573</span>
                     </div>
-                    <div class="col-sm-3 rt-col-align">
-                        <div class="status status__cancelled">Cancelled</div>
-                    </div>
+                    <div class="status status__cancelled">Cancelled</div>
                 </div>
                 <div class="row">
                     <div class="col-sm-9">
@@ -191,8 +191,8 @@
         Any pending ink orders will still be processed. 
     </p>
     <div class="button-section rem-box">
-        <button class="cbtn cbtn-light-gray-2" onclick="closeModal()">Cancel</button>
-        <button class="cbtn cbtn-canon-red" onclick="closeModal()">OK</button>
+        <button class="button cancel" onclick="closeModal()">Cancel</button>
+        <button class="button alert" onclick="closeModal()">OK</button>
     </div>
 </div>
 <!-- / Cancel Service Modal -->
@@ -252,36 +252,6 @@
                                 <td title="$15.99">$15.99</td>
                                 <td title="3897426862487628347">3897426862487628347</td>
                             </tr>
-                            <tr>
-                                <td title="36428736487">36428736487</td>
-                                <td title="Sept 31, 2018">Sept 31, 2018</td>
-                                <td title="In Process">In Process</td>
-                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
-                                <td title="27857836">27857836</td>
-                                <td title="1">1</td>
-                                <td title="$15.99">$15.99</td>
-                                <td title="3897426862487628347">3897426862487628347</td>
-                            </tr>
-                            <tr>
-                                <td title="36428736487">36428736487</td>
-                                <td title="Sept 31, 2018">Sept 31, 2018</td>
-                                <td title="In Process">In Process</td>
-                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
-                                <td title="27857836">27857836</td>
-                                <td title="1">1</td>
-                                <td title="$15.99">$15.99</td>
-                                <td title="3897426862487628347">3897426862487628347</td>
-                            </tr>
-                            <tr>
-                                <td title="36428736487">36428736487</td>
-                                <td title="Sept 31, 2018">Sept 31, 2018</td>
-                                <td title="In Process">In Process</td>
-                                <td title="CLI-221 Black Ink Tank">CLI-221 Black Ink Tank</td>
-                                <td title="27857836">27857836</td>
-                                <td title="1">1</td>
-                                <td title="$15.99">$15.99</td>
-                                <td title="3897426862487628347">3897426862487628347</td>
-                            </tr>
                         </table>
                     </div>
                 </div>
@@ -320,8 +290,8 @@
                                         <img src="/img/toner-crg-051-front_1_l.jpg">
                                     </div>
                                     <div class="product-row__more">
-                                            <button class="cbtn cbtnd cbtn-white fa fa-angle-down"></button>
-                                        </div>
+                                        <button class="cbtn cbtnd cbtn-white fa fa-angle-down"></button>
+                                    </div>
                                     <div class="product-row__specs">
                                         <h1>Toner CRG-051</h1>
                                         <p>Delivered July, 16, 2018</p>
@@ -651,7 +621,7 @@
                     </div> <!--  / .manage-billing  -->   
                 </article>
                 <div class="footer button-section">
-                    <button class="button" onclick="closeModal()">Cancel</button>
+                    <button class="button cancel" onclick="closeModal()">Cancel</button>
                     <button class="button alert" type="submit">Save</button>
                 </div>
         </div>
@@ -824,7 +794,7 @@
                 </article>
             
             <div class="footer button-section">
-                <button class="button" onclick="closeModal()">Cancel</button>
+                <button class="button cancel" onclick="closeModal()">Cancel</button>
                 <button class="button alert" type="submit">Save</button>
             </div>
         

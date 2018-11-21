@@ -1,6 +1,6 @@
 
 $td-pad: .5rem;
-$td-font: 11px; 
+$td-font: 13px; 
 
 
 .full-table-data {
@@ -19,21 +19,20 @@ $td-font: 11px;
 
 
 .order-history {
-    margin: 1rem auto 1rem;
+    margin: 3rem 1rem;
     .printer-single {
         padding-bottom: 1rem;
         border-bottom: 1px solid #ccc;
     }
     img {
       width: 100%;
-      max-width: 200px;
+      max-width: 120px;
       float: left;
       @media (max-width: 767px) {
         max-width: 125px;
       }
     }
     h3 {
-      
       margin: 1rem 0 0 0;
       font-weight: bold;
     }
@@ -46,6 +45,7 @@ $td-font: 11px;
           margin: 0;
       }
    }
+
 
    .product-row {
       border-bottom: 1px solid #999;
@@ -62,7 +62,6 @@ $td-font: 11px;
       float: left;
     }
     &__specs {
-      margin-left: 5rem;
       h1 {
         font-size: 1.2rem;
         font-weight: bold;
@@ -78,11 +77,13 @@ $td-font: 11px;
       font-size: 2rem;
       color: #333;
       text-align: center;
+      margin-top: -1rem;
       @media (min-width: 992px) {
         display: none;
        }
     }
     .product-target {
+      cursor: pointer;
       @media (min-width: 992px) {
        display: block;
        width: 23rem;
@@ -90,7 +91,6 @@ $td-font: 11px;
       }
     }
     .product-details {
-      margin-left: 5rem;
       font-size: 14px;
       @media (min-width: 992px) {
         margin-left: 25rem;
@@ -119,10 +119,9 @@ $td-font: 11px;
         overflow-y: scroll;
         thead {
             tr {
-                background-color: #ccc;
                 td {
+                  color: black;
                   @include ellipsis;
-                  text-transform: uppercase;
                   padding: $td-pad;
                   font-weight: bold;
                   font-size: $td-font;
@@ -146,24 +145,11 @@ $td-font: 11px;
     } // end table
 }
 
-
-
-/*!
-// CSS only Responsive Tables
-// http://dbushell.com/2016/03/04/css-only-responsive-tables/
-// by David Bushell
-*/
 .rtable {
-    /*!
-    // IE needs inline-block to position scrolling shadows otherwise use:
-    // display: block;
-    // max-width: min-content;
-    */
      display: inline-block;
     vertical-align: top;
     max-width: 100%;
     overflow-x: auto;
-    // optional - looks better for small cell values
     white-space: nowrap;
     border-collapse: collapse;
     border-spacing: 0;
@@ -171,13 +157,9 @@ $td-font: 11px;
   }
   .rtable,
   .rtable--flip tbody {
-    // optional - enable iOS momentum scrolling
     -webkit-overflow-scrolling: touch;
     background-repeat: no-repeat;
   }
-  
-  // change these gradients from white to your background colour if it differs
-  // gradient on the first cells to hide the left shadow
   .rtable td:first-child,
   .rtable--flip tbody tr:first-child {
    
@@ -220,10 +202,8 @@ $td-font: 11px;
     display: block;
   }
   .rtable--flip td {
-    // border-collapse is no longer active
     border-left: 0;
   }
-  // border-collapse is no longer active
   .rtable--flip th:not(:last-child),
   .rtable--flip td:not(:last-child) {
     border-bottom: 0;

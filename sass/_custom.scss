@@ -32,6 +32,7 @@ header {
                 list-style-type: none;
                 position: fixed;
                 top: 0;
+                will-change: transform;
                 transform: translateX(-41rem);
                 width: 80%;
                 background: rgba(0, 0, 0, 0.85);
@@ -152,6 +153,7 @@ hr {
     }
     .button-ct {
         text-align: right;
+        margin-top: 1.5rem;
     }
     .forgot-link {
         display: inline-block;

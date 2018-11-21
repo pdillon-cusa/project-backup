@@ -23,6 +23,8 @@
     .list-item {
         border-bottom: 1px solid #999;
         padding-bottom: 1rem;
+        position: relative;
+
         @media (max-width: 767px) {
             text-align: center;
         }
@@ -44,20 +46,23 @@
                 @media (max-width: 767px) {
                     display: block;
                     width: 100%;
+                    padding: .5rem 0;
                 }
                 a {
                     text-decoration: none;
                 }
             }
         }
-        .cancel {
+        .cancel-enrollment {
+            font-size: 12px;
+
             @media (max-width: 767px) {
                 font-weight: bold;
                 background-color: transparent;
                 color: $primary;
                 padding-right: 0;
                 padding-left: 0;
-
+                float: left;
             }
         }
         img {
@@ -121,17 +126,17 @@
             }
         }
         .status {
-            display: inline-block;
             text-align: center;
             text-transform: uppercase;
             font-size: 13px;
             font-weight: bold;
             border-radius: 2rem;
             margin-top: 1rem;
+            position: absolute;
+            right: 0;
+            top: -12px;
+
             @media (max-width: 767px) {
-                position: absolute;
-                margin-top: -210px;
-                right: 0;
                 padding: .2rem 1rem;
             }
             &__active {
@@ -158,6 +163,7 @@
             }
         }
 
+        
         // if we choose no slide-out menu - these are the styles
         // nav {
         //     color: $gray-dark;

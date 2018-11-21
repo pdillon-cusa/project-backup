@@ -7,8 +7,12 @@ $font-family:  Apex, "Helvetica Neue", Helvetica, Arial, sans-serif; //Apex,
 $font-color: #333;
 
 $primary: #EE1B22;
-$primary-hover: mix(black, $primary, 15%);
-$primary-x-lt: mix(white, #EE1B22, 85%);
+$primary-hover: mix(black, $primary, 25%);
+$primary-x-lt: mix(white, $primary, 85%);
+
+$cancel: #333;
+$cancel-hover: mix(black, $cancel, 25%);
+$cancel-x-lt: mix(white, $cancel, 85%);
 
 $link: #07C;
 $link-visited: mix(black, $link, 15%);
@@ -32,6 +36,7 @@ $accent: #1779ba;
 $gray-x-dark: #222;
 $gray-dark: #444;
 $gray-med: #555;
+$gray-med-6: #666;
 $gray-lt: #ccc;
 $gray-x-lt: #ddd;
 
